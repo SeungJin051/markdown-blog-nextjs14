@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*  */
+.bg-primary {
+  @apply bg-white dark:bg-slate-900
+}
+
+/*  */
+footer {
+  @apply text-gray-400 dark:text-slate-400 
+}
+
+/*  */
+.about-us {
+  @apply inline-flex px-6 py-2 text-lg text-white bg-indigo-500 
+  border-0 rounded focus:outline-none hover:bg-indigo-600
+  dark:bg-yellow-300 dark:hover:bg-yellow-500 dark:text-black
+}
