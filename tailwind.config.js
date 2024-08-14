@@ -9,7 +9,12 @@ module.exports = {
     './layout/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customDarkBg: '#191919',
+        customDarkStudyBg: '#262626',
+      },
+    },
   },
   plugins: [],
 };

@@ -4,7 +4,7 @@ import GdscAnimation from './GdscAnimation';
 export default function Hero() {
   return (
     <>
-      <div className="flex flex-col items-center mb-16 text-center lg:flex-grow md:w-1/2 lg:pr-12 md:pr-16 md:items-start md:text-left md:mb-0">
+      <div className="flex flex-col items-center text-center lg:flex-grow md:w-1/2 lg:pr-12 md:pr-16 md:items-start md:text-left md:mb-0">
         <h1 className="mb-4 text-3xl font-medium text-gray-900 title-font sm:text-4xl dark:text-white">
           동의대학교의{' '}
           <span className="underline">Google Devleopment Student Club</span>에
