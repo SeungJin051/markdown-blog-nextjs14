@@ -1,23 +1,22 @@
 import React from 'react';
 import { TOKEN, DATABASE_ID } from '@/config';
 
-export default function Studys({ projects }) {
-  // console.log(projects);
+export default function Studys({ studys }) {
+  // console.log(studys);
+  const { id } = studys; // 디스트럭처링
 
   return (
     <div>
-      <h1>총 스터디 : {projects.results.length}</h1>
-      {projects.results.map(aProject => (
-        <h1 key={aProject.id}>
-          {aProject.properties.Name.title[0]?.plain_text}
-        </h1>
+      <h1>총 스터디 : {studys.results.length}</h1>
+      {studys.results.map(study => (
+        <h1 key={id}>{study.properties.Name.title[0]?.plain_text}</h1>
       ))}
     </div>
   );
 }
 
-// 각 요청 때마다 호출
-export async function getServerSideProps() {
+// Notion API에 HTTP 요청을 보낼 때 사용되는 설정 | ISR로 로딩시간 줄이기
+export async function getStaticProps() {
   const options = {
     method: 'POST',
     headers: {
@@ -37,24 +36,15 @@ export async function getServerSideProps() {
     }),
   };
 
-  // fetching await 받아올 때 까지 기다림.
   const res = await fetch(
     `https://api.notion.com/v1/databases/${DATABASE_ID}/query`,
     options,
   );
 
-  // 결과값
-  const projects = await res.json();
-
-  const projectNames = projects.results.map(
-    aProject => aProject.properties.Name.title[0]?.plain_text,
-  );
-
-  // console.log(`projectNames : ${projectNames}`);
+  const studys = await res.json();
 
   return {
-    props: { projects }, // will be passed to the page component as props
-    // getStaticProps() 메소드를 사용한다면 revalidate 로 데이터 변경시 갱신가능!
-    // revalidate: 1 // 데이터 변경이 있으면 갱신 1초 마다
+    props: { studys },
+    revalidate: 300,
   };
 }
