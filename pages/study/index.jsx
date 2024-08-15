@@ -3,6 +3,11 @@ import { TOKEN, DATABASE_ID } from '@/config';
 import StudyItem from '@/components/studys/StudyItem';
 
 export default function Studys({ studys }) {
+  // 데이터 유효성 검사
+  if (!studys || !studys.results) {
+    return <h1>데이터를 불러오지 못했습니다.</h1>;
+  }
+
   return (
     <div className="grid grid-cols-1 gap-2 p-10 pt-10 dark:bg-customDarkBg md:grid-cols-2 xl:grid-cols-3">
       <h1 className="mb-0 text-4xl font-bold m-7 col-span-full">
