@@ -17,6 +17,12 @@ const nextConfig = {
       'gaussian37.github.io',
       'www.juicymedia.co.uk',
     ],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
 };
 
