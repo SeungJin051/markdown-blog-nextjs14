@@ -34,7 +34,7 @@ export default function Header() {
             Notice
           </Link>
           <Link
-            href="/"
+            href="/blog"
             className="mr-5 hover:text-gray-900 dark:text-gray-400"
           >
             Blog
