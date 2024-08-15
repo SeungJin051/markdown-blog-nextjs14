@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@markdoc/markdoc": "^0.4.0",
+    "frontmatter": "^0.0.3",
+    "html-react-parser": "^5.1.12",
     "next": "14.2.5",
     "next-themes": "^0.3.0",
     "react": "^18",
