@@ -65,5 +65,4 @@ React Native는 React에서 사용하는 Component와 같은 구조를 사용하
 - [React Native docs](https://reactnative.dev/docs/getting-started)
 - [visual-craft](https://www.visual-craft.com/blog/react-native-for-building-hybrid-mobile-apps/)
 
-<br>
 작성자 : 박상현(thelight0804)
