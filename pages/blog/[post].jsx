@@ -3,6 +3,11 @@ import { getAllPostFile, getHTML, getMetadata } from '@/config/BlogEngine';
 import Image from 'next/image';
 import parse from 'html-react-parser';
 import { format } from 'date-fns';
+import dynamic from 'next/dynamic';
+
+const Comment = dynamic(() => import('@/components/post/Comment'), {
+  ssr: false,
+});
 
 export default function BlogPost({ metadata, postHTML }) {
   useEffect(() => {
@@ -36,6 +41,7 @@ export default function BlogPost({ metadata, postHTML }) {
         <div className="mt-4 text-gray-600 dark:text-gray-400">
           {metadata.date}
         </div>
+        <Comment />
       </div>
     </div>
   );
