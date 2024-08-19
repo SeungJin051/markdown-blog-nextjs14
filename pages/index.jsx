@@ -1,5 +1,4 @@
 import Hero from '@/components/home/Hero';
-import Things from '@/components/home/Things';
 
 export default function Home() {
   return (
@@ -9,7 +8,6 @@ export default function Home() {
           <div className="container flex flex-col items-center px-5 py-24 pb-0 mx-auto md:flex-row">
             <Hero />
           </div>
-          <Things />
         </section>
       </section>
     </div>
