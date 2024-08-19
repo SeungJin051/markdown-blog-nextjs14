@@ -22,7 +22,7 @@ export default function Header() {
         </Link>
         <nav className="flex flex-wrap items-center justify-center text-base md:ml-auto md:mr-auto">
           <Link
-            href="/"
+            href="/about-us"
             className="mr-5 hover:text-gray-900 dark:text-gray-400"
           >
             About Us
