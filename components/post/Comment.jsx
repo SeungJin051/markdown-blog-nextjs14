@@ -8,7 +8,7 @@ const Comment = () => {
     script.src = 'https://utteranc.es/client.js';
     script.async = true;
     script.crossOrigin = 'anonymous';
-    script.setAttribute('repo', 'SeungJin051/notionapi-nextjs14');
+    script.setAttribute('repo', 'SeungJin051/markdown-blog-nextjs14');
     script.setAttribute('issue-term', 'pathname');
     script.setAttribute('label', 'comment');
     script.setAttribute('theme', 'github-light');
