@@ -52,7 +52,7 @@ export default function Header() {
             Event
           </Link>
           <Link
-            href="/"
+            href="/member"
             className="mr-5 hover:text-gray-900 dark:text-gray-400"
           >
             Member
