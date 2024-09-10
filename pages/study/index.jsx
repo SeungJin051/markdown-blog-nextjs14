@@ -1,5 +1,5 @@
 import React from 'react';
-import { TOKEN, DATABASE_ID } from '@/config';
+import { TOKEN, STUDY_DATABASE_ID } from '@/config';
 import StudyItem from '@/components/studys/StudyItem';
 
 export default function Studys({ studys }) {
@@ -50,7 +50,7 @@ export async function getStaticProps() {
   };
 
   const res = await fetch(
-    `https://api.notion.com/v1/databases/${DATABASE_ID}/query`,
+    `https://api.notion.com/v1/databases/${STUDY_DATABASE_ID}/query`,
     options,
   );
 
