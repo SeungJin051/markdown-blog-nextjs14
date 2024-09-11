@@ -68,7 +68,7 @@ export default function AboutUs() {
           <Things />
           <div>
             <div>
-              <h1 className="text-3xl font-medium title-font sm:text-4xl text-start">
+              <h1 className="mb-3 text-3xl font-medium title-font sm:text-4xl text-start">
                 다양한 활동
               </h1>
               <span>
@@ -79,7 +79,7 @@ export default function AboutUs() {
               </span>
             </div>
             <div>
-              <h1 className="text-3xl font-medium title-font sm:text-4xl text-start">
+              <h1 className="mt-10 mb-3 text-3xl font-medium title-font sm:text-4xl text-start">
                 🎙️ 세션
               </h1>
               <span>
@@ -90,7 +90,7 @@ export default function AboutUs() {
               </span>
             </div>
             <div>
-              <h1 className="text-3xl font-medium title-font sm:text-4xl text-start">
+              <h1 className="mt-10 mb-3 text-3xl font-medium title-font sm:text-4xl text-start">
                 GDSC DEU의 특혜
               </h1>
               <ol className="mb-3 space-y-1 text-gray-500 list-decimal list-inside text-start dark:text-gray-400">
@@ -128,7 +128,7 @@ export default function AboutUs() {
               </ol>
             </div>
             <div>
-              <h1 className="text-3xl font-medium title-font sm:text-4xl text-start">
+              <h1 className="mt-10 mb-3 text-3xl font-medium title-font sm:text-4xl text-start">
                 GDSC DEU 지원하기
               </h1>
               <p className="text-start">
