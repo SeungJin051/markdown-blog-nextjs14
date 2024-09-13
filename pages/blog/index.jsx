@@ -1,6 +1,6 @@
 import React from 'react';
 import { getAllPostFile, getMetadata } from '@/config/BlogEngine'; // 서버 사이드 전용 모듈
-import PostCard from '@/components/post/PostCard';
+import BlogPostCard from '@/components/post/BlogPostCard';
 
 export async function getStaticProps() {
   const postFiles = getAllPostFile();
@@ -33,7 +33,7 @@ export default function Blog({ posts }) {
           블로그를 통해 보는 GDSC-DEU의 노력과 성취
         </span>
         {posts.map(post => (
-          <PostCard key={post.fileName} data={post} />
+          <BlogPostCard key={post.fileName} data={post} />
         ))}
       </div>
     </div>
