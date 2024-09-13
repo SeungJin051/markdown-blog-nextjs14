@@ -28,7 +28,7 @@ export default function Header() {
             About Us
           </Link>
           <Link
-            href="/"
+            href="/announcement"
             className="mr-5 hover:text-gray-900 dark:text-gray-400"
           >
             Notice
